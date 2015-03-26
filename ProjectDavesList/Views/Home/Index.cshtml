@@ -1,0 +1,134 @@
+﻿@model ProjectDavesList.Models.ItemViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-6 column">
+            <h2 class="ch2">@Html.ActionLink("HOUSING", "Housing")</h2>
+            <table class="table table-bordered table table-striped">
+            <tr>
+                    <th>Description</th>
+                    <th>Seller</th>
+                    <th>Date Posted</th>
+                    <th>City and State</th>
+                </tr>
+                @foreach (var k in Model.MyList)
+                {
+                    <tr>
+                        <td>@k.Description</td>
+                        <td>@k.CreatedBy</td>
+                        <td>@k.DateCreated</td>
+                        <td>@k.City, @k.State</td>
+                    </tr>
+                }
+            </table>
+       </div>
+        <div class="col-md-6 column">
+            <h2 class="ch2">@Html.ActionLink("FURNITURE", "Furniture")</h2>
+            <table class="table table-bordered table table-striped">
+                <tr>
+                    <th>Description</th>
+                    <th>Seller</th>
+                    <th>Date Posted</th>
+                    <th>City and State</th>
+                </tr>
+                @foreach (var k in Model.MyList2)
+                {
+                    <tr>
+                        <td>@k.Description</td>
+                        <td>@k.CreatedBy</td>
+                        <td>@k.DateCreated</td>
+                        <td>@k.City, @k.State</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-6 column">
+            <h2 class="ch2">@Html.ActionLink("ELECTRONICS", "Electronics")</h2>
+            <table class="table table-bordered table table-striped">
+                <tr>
+                    <th>Description</th>
+                    <th>Seller</th>
+                    <th>Date Posted</th>
+                    <th>City and State</th>
+                </tr>
+                @foreach (var k in Model.MyList3)
+                {
+                    <tr>
+                        <td>@k.Description</td>
+                        <td>@k.CreatedBy</td>
+                        <td>@k.DateCreated</td>
+                        <td>@k.City, @k.State</td>
+                    </tr>
+                }
+            </table>
+        </div>
+        <div class="col-md-6 column">
+            <h2 class="ch2">@Html.ActionLink("TOYS", "Toys")</h2>
+            <table class="table table-bordered table table-striped">
+                <tr>
+                    <th>Description</th>
+                    <th>Seller</th>
+                    <th>Date Posted</th>
+                    <th>City and State</th>
+                </tr>
+                @foreach (var k in Model.MyList4)
+                {
+                    <tr>
+                        <td>@k.Description</td>
+                        <td>@k.CreatedBy</td>
+                        <td>@k.DateCreated</td>
+                        <td>@k.City, @k.State</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-6 column">
+            <h2 class="ch2">@Html.ActionLink("AUTOMOBILES", "Automobiles")</h2>
+            <table class="table table-bordered table table-striped">
+                <tr>
+                    <th>Description</th>
+                    <th>Seller</th>
+                    <th>Date Posted</th>
+                    <th>City and State</th>
+                </tr>
+                @foreach (var k in Model.MyList5)
+                {
+                    <tr>
+                        <td>@k.Description</td>
+                        <td>@k.CreatedBy</td>
+                        <td>@k.DateCreated</td>
+                        <td>@k.City, @k.State</td>
+                    </tr>
+                }
+            </table>
+        </div>
+        <div class="col-md-6 column">
+            <h2 class="ch2">@Html.ActionLink("SERVICES", "Services")</h2>
+            <table class="table table-bordered table table-striped">
+                <tr>
+                    <th>Description</th>
+                    <th>Seller</th>
+                    <th>Date Posted</th>
+                    <th>City and State</th>
+                </tr>
+                @foreach (var k in Model.MyList6)
+                {
+                    <tr>
+                        <td>@k.Description</td>
+                        <td>@k.CreatedBy</td>
+                        <td>@k.DateCreated</td>
+                        <td>@k.City, @k.State</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+

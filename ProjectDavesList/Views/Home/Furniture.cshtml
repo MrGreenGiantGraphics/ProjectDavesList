@@ -1,0 +1,34 @@
+﻿@model ProjectDavesList.Models.ItemViewModel
+@{
+    ViewBag.Title = "Furniture";
+}
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h2 class="ch2">Furniture</h2>
+            <table class="table table-bordered table table-striped">
+                <tr>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Seller</th>
+                    <th>Date Posted</th>
+                    <th>City and State</th>
+                    <th>Image</th>
+                </tr>
+                @foreach (var k in Model.MyList2)
+                {
+                    <tr>
+                        <td>@k.Description</td>
+                        <td>@k.Price</td>
+                        <td>@k.CreatedBy</td>
+                        <td>@k.DateCreated</td>
+                        <td>@k.City, @k.State</td>
+                        <td><img class="item-size" src="@k.ImageSize" /></td>
+                    </tr>
+                }
+            </table>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿@*@model ProjectDavesList.Models.ItemViewModel*@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Customer Details</title>
+</head>
+<body>
+    <div class="col-md-6 column">
+        <table class="table table-bordered table table-striped">
+            <tr>
+                <th>Description</th>
+                <th>Seller</th>
+                <th>Date Posted</th>
+                <th>City and State</th>
+            </tr>
+            @*@foreach (var k in Model.MyList2)
+            {
+                <tr>
+                    <td>@k.Description</td>
+                    <td>@k.CreatedBy</td>
+                    <td>@k.DateCreated</td>
+                    <td>@k.City, @k.State</td>
+                </tr>
+            }*@
+        </table>
+    </div>
+
+</body>
+</html>
+
